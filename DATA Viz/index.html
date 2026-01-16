@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>L'histoire des Jeux Olympiques</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+  </head>
+
+  <body>
+
+    <main class="scroll-container">
+
+      <!-- ========================= SECTION 1 — ACCUEIL ========================= -->
+      <section class="section section-hero">
+
+        <div class="content-center">
+
+          <h1 class="main-title">L'histoire des Jeux Olympiques</h1><br>
+
+          <p class="intro-text">
+            Depuis plus d’un siècle, les Jeux Olympiques racontent bien plus que de simples performances sportives.
+            Ce site propose d’explorer l’histoire des JO à travers les chiffres : pays dominants, parité hommes-femmes
+            et anecdotes marquantes, les plus grands champions ou les médailles les plus remarquables.
+            <br><br>
+            À l’aide de visualisations interactives, l’objectif est de faire parler les données afin de révéler
+            des tendances, des comparaisons et des faits parfois inattendus.
+          </p>
+
+        </div>
+      </section>
+
+      <!-- ========================= SECTION 2 — TABLEAU DES MÉDAILLES ========================= -->
+      <section class="section section-medals">
+        <div class="section-header">
+          <h2>Tableau général des médailles</h2>
+          <h3>Top 10 des pays par nombre de médailles</h3>
+        </div>
+
+        <!-- Intégration Datawrapper via iframe -->
+        <div class="dataviz-placeholder bar-chart">
+          <iframe title="Top 10 Médailles" 
+            src="https://datawrapper.dwcdn.net/KVgIz/1/" 
+            scrolling="no" 
+            frameborder="0" 
+            style="width: 100%; height: 350px;">
+          </iframe>
+        </div>
+
+        <div class="parity-text">
+          <p>Les États-Unis dominent largement l’histoire des Jeux Olympiques, avec une avance confortable sur les autres nations grâce à leurs performances régulières, été comme hiver. Cette domination met en lumière la profondeur de leur programme sportif et la constance de leurs athlètes au fil des décennies.</p><br>
+          <p>Les Jeux d’hiver de 2026 à Milan-Cortina offrent une occasion unique pour certains pays de progresser dans le classement. La France et la Suède pourraient ainsi gagner quelques places, tandis que le Canada, actuellement 11ᵉ, pourrait intégrer le top 10 grâce à ses performances hivernales. D’autres nations ont également le potentiel de rejoindre le classement dans le futur, tandis que la bataille entre le Japon et l’Australie reste très serrée, illustrant la compétition constante pour figurer parmi les meilleures nations olympiques.</p>
+        </div>
+      </section>
+      
+
+
+      <!-- ========================= SECTION 3 — CARTE DU MONDE OLYMPIQUE ========================= -->
+      <section class="section section-map">
+
+        <div class="section-header">
+          <h2>Carte du monde olympique</h2>
+        </div>
+
+        <div class="dataviz-placeholder world-map">
+          <div class="flourish-embed flourish-map" data-src="visualisation/27241833"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27241833/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+        </div>
+
+      </section>
+      
+      <!-- ========================= SECTION 4 — PARITÉ HOMMES / FEMMES ========================= -->
+      <section class="section section-parity">
+
+        <div class="section-header">
+          <h2>La parité dans les Jeux</h2>
+          <h3>Nombre d'athlète Femme et Homme Jeux Olympiques d'été</h3>
+        </div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/27243822"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27243822/thumbnail" width="100%" alt="chart visualization" /></noscript></div>        
+        <div class="section-header">
+          <h3>Nombre d'athlète Femme et Homme Jeux Olympiques d'hiver</h3>
+        </div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/27244309"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27244309/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+        <div class="parity-text">
+          <p>
+            Historiquement, de nombreuses disciplines des Jeux olympiques étaient réservées aux hommes,
+            comme la boxe, la lutte, le judo, l’haltérophilie, le football ou encore le saut à ski et le bobsleigh.
+            Les femmes ont été progressivement intégrées au programme olympique à partir du XXᵉ siècle.
+            Très peu de sports ont été exclusivement féminins, principalement la gymnastique rythmique
+            et la natation synchronisée.
+            <br><br>
+            Aujourd’hui, la quasi-totalité des disciplines sont ouvertes aux femmes.
+            Le CIO vise désormais une parité femmes-hommes dans le programme olympique.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- ========================= SECTION 5 — PLUS GRANDS MÉDAILLÉS  ========================= -->
+      
+      <section class="section section-athletes">
+        <div class="section-header">
+          <h2>Les plus grands médaillés</h2>
+        </div>
+
+        <div class="dataviz-placeholder bubble-chart">
+          <div class="flourish-embed flourish-hierarchy" data-src="visualisation/27246004"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27246004/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+        </div>
+
+      </section>
+
+      <!-- ========================= SECTION 6 — ANECDOTES ========================= -->
+      <section class="section section-anecdotes">
+            <div class="section-header">
+                <h2>Anecdotes olympiques</h2>
+            </div>
+
+            <div class="anecdotes-grid">
+
+              <div class="anecdote-card fade-in">
+                <h4>Le plus jeune athlète</h4>
+                <h5>Dimitrios Loundras</h5>
+                <img src="Dimitrios.PNG" alt="Dimitrios Loundras" class="anecdote-image">
+                <p><em>
+                  Dimitrios Loundras a participé aux Jeux Olympiques à seulement <b>10 ans et 218 jours</b> lors des Jeux de 1896.
+                  Engagé en gymnastique aux barres parallèles dans l’épreuve par équipe, il a remporté une médaille de bronze.
+                  Il reste à ce jour le plus jeune athlète et le plus jeune médaillé olympique officiel de l’histoire.
+                </em></p>
+              </div>
+
+              <div class="anecdote-card fade-in">
+                <h4>Le plus vieux athlète</h4>
+                <h5>Oscar Swahn</h5>
+                <img src="Oscar.PNG" alt="Oscar Swahn" class="anecdote-image">
+                <p><em>
+                  Oscar Swahn a participé aux Jeux Olympiques de 1920 à l’âge de <b>72 ans et 281 jours</b> en tir (cerf courant).
+                  Il a remporté une médaille d’argent, faisant de lui le médaillé olympique le plus âgé de l’histoire.
+                </em></p>
+              </div>
+
+              <div class="anecdote-card fade-in">
+                <h4>Le plus grand athlète</h4>
+                <h5>Yao Ming</h5>
+                <img src="Yao.PNG" alt="Yao Ming" class="anecdote-image">
+                <p><em>
+                  Mesurant <b>2,29 mètres</b>, Yao Ming est l’athlète le plus grand à avoir participé aux Jeux Olympiques.
+                  Il a représenté la Chine en basketball lors des éditions de 2000, 2004 et 2008.
+                </em></p>
+              </div>
+
+              <div class="anecdote-card fade-in">
+                <h4>La plus petite athlète</h4>
+                <h5>Flávia Saraiva</h5>
+                <img src="Flavia.PNG" alt="Flávia Saraiva" class="anecdote-image">
+                <p><em>
+                  Avec une taille de <b>1,33 mètre</b>, Flávia Saraiva s’est illustrée lors des Jeux Olympiques de Rio 2016
+                  en gymnastique artistique, devenant une figure emblématique au Brésil.
+                </em></p>
+              </div>
+
+              <div class="anecdote-card fade-in">
+                <h4>Record de participations</h4>
+                <h5>Ian Millar & Nino Salukvadze</h5>
+                <img src="NinoxIan.PNG" alt="Ian Millar et Nino Salukvadze" class="anecdote-image">
+                <p><em>
+                  Le record de participations aux Jeux Olympiques est partagé par deux athlètes avec <b>10 participations</b>.
+                  Nino Salukvadze a participé à dix éditions consécutives, de 1988 à 2024.
+                </em></p>
+              </div>
+
+              <div class="anecdote-card fade-in">
+                <h4>Athlète le plus médaillé</h4>
+                <h5>Michael Phelps</h5>
+                <img src="Michael.PNG" alt="Michael Phelps" class="anecdote-image">
+                <p><em>
+                  Michael Phelps est l’athlète le plus médaillé de l’histoire olympique avec <b>28 médailles</b>,
+                  dont 23 en or, un record absolu.
+                </em></p>
+              </div>
+
+            </div>
+
+        </section>
+    </main>
+  </body>
+  <footer class="footer">
+         <p>Arnaud Rousseau Master CEN 2026 ©</p>
+    </footer>
+</html>
