@@ -1,0 +1,227 @@
+/* ========================= RESET & BASE ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #111;
+  scroll-behavior: smooth;
+  background: #f2f2f2;
+}
+
+/* ========================= CONTENEUR GLOBAL ========================= */
+.scroll-container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+
+  padding: 60px 0;
+}
+
+/* ========================= SECTIONS ========================= */
+.section {
+  width: 100%;
+  max-width: 1400px;
+  background: #ffffff;
+
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+
+  padding: 80px 100px;
+}
+
+/* ========================= HERO ========================= */
+.section-hero {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #DCB243;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.intro-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 19px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ========================= TITRES DE SECTION ========================= */
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  color: #DCB243;
+  margin-bottom: 6px;
+}
+
+.section-header h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #999;
+}
+
+/* ========================= DATAVIZ ========================= */
+.dataviz-placeholder,
+iframe {
+  background: #fafafa;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+/* ========================= SECTION MÉDAILLES / TEXTE ========================= */
+.parity-text {
+  max-width: 1100px;
+  margin-top: 40px;
+  padding-left: 24px;
+  border-left: 4px solid #DCB243;
+
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ========================= SECTION MAP ========================= */
+.section-map .dataviz-placeholder {
+  padding: 0;
+  background: none;
+}
+
+.section-map .flourish-embed {
+  width: 100% !important;
+  min-height: 600px;
+}
+
+/* ========================= SECTION PARITÉ ========================= */
+.section-parity {
+  gap: 40px;
+}
+
+/* ========================= SECTION ATHLÈTES ========================= */
+.section-athletes {
+  padding: 80px 100px;
+}
+
+/* ========================= SECTION ANECDOTES ========================= */
+.section-anecdotes {
+  padding: 80px 100px;
+}
+
+.anecdotes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.anecdote-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anecdote-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+}
+
+.anecdote-card h4 {
+  font-size: 17px;
+  color: #DCB243;
+  margin-bottom: 6px;
+}
+
+.anecdote-card h5 {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.anecdote-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.anecdote-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  transition: transform 0.4s ease;
+}
+
+.anecdote-card:hover .anecdote-image {
+  transform: scale(1.05);
+}
+
+/* ========================= ANIMATIONS ========================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.1s; }
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.3s; }
+.fade-in:nth-child(4) { animation-delay: 0.4s; }
+.fade-in:nth-child(5) { animation-delay: 0.5s; }
+.fade-in:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================= FOOTER ========================= */
+.footer {
+    width: 100%;
+    height: 80px;
+    background: #111; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    z-index: 10;
+    position: relative;
+
+    /* Ajout de l'ombre */
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================= RESPONSIVE ========================= */
+@media (max-width: 1200px) {
+  .section {
+    padding: 60px 40px;
+  }
+
+  .anecdotes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-title {
+    font-size: 44px;
+  }
+}
